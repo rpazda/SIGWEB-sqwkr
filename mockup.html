@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- This is an HTML comment, text inside these will not show up on your page but can be viewed in the source -->
+    <!-- These can be used to remove information from the page you may want later, label things, or leave notes for yourself -->
+    <!-- Keep in mind, these will still be delivered with your webpage, just not on the page itself -->
+
+     <!-- Header - A good place to link important things like libraries, CDNs, stylesheets, scripts etc. -->
+    <head>
+        <meta charset="utf-8">
+
+         <!-- Page Title - Shows up in tab -->
+        <title>sqwkr</title>
+        
+        <!-- JQuery Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Materialize, Compiled and minified CSS [Uncomment to use]-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+        <!-- Materialize, Compiled and minified JavaScript [Uncomment if using Materialize]-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+        <!--Material Icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Scripts - Can define here or separate file -->
+        <script>
+            
+        </script>
+        
+         <!-- Style - Can define here or separate file -->
+        <style>
+            #sqwkr-logo{
+                height: 70px;
+            }
+            #sidebar{
+                border-right: 1px solid grey;
+            }
+            .prefix{
+                padding-top: 15px;
+            }
+            nav{
+                background-color: lightseagreen !important;
+            }
+            .post{
+                background-color: lightcyan;
+            }
+            .post-image{
+                width: 100%;
+            }
+        </style>
+
+    </head>
+
+    <!-- Body - The main content area for your site -->
+    <body>
+
+        <div class="container-fluid">
+
+            <div class="row">
+                
+                <nav>
+                    <div class="col s12">
+                        <div class="nav-wrapper">
+                            <a href="#" class="brand-logo">
+                                <img src="assets/images/crow-full-resolution.png" alt="sqwkr-logo" id="sqwkr-logo">
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li>
+                                    <a href="#">Make a Post</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="row">
+            
+                <div class="col m3" id="sidebar" style="height: 500px">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">search</i>
+                                <input placeholder="Search Posts" id="search_field" type="text" class="validate">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col m9" style="height: 500px">
+
+                    <div class="row">
+
+                        <div class="col m7 post">
+                            <div class="row" style="padding-top: 15px;">
+                                <div class="col s3">
+                                    <img class="post-image" src="assets/images/post.png">
+                                </div>
+                                <div class="col s9">
+                                    <div class="row" class="post-title">
+                                        Captain Lawrence Brewing Company
+                                    </div>
+                                    <div class="row" class="post-body">
+                                        <p>
+                                            Captain Lawrence Brewing Company is an award-winning craft brewery located in Elmsford, New York.[2] The brewery is owned and run by head brewer Scott Vaccaro.[2] Vaccaro, a homebrewer since 1995, trained in brewing science at UC Davis.[2]
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="col s3">
+                                    <button class="btn purple" title="Like post">+1</button>
+                                </div>
+                                <div class="col s3">
+                                    <button class="btn cyan" title="Report post"><i class="material-icons">gavel</i></button>
+                                </div>
+                                <div class="col s3">
+                                    Posted: [Timestamp]
+                                </div>
+                                <div class="col s3">
+                                    Points: [POINTS]
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
